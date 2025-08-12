@@ -9,12 +9,6 @@ def logpass_kb() -> ReplyKeyboardMarkup:
     ]
     return ReplyKeyboardMarkup(btns, resize_keyboard=True)
 
-def message_kb() -> ReplyKeyboardMarkup:
-    btns = [
-        ['->'],
-    ]
-    return ReplyKeyboardMarkup(btns, resize_keyboard=True)
-
 def load_logpass(name: str):
     with open(name, "r", encoding="utf-8") as f:
         a = f.readlines()
